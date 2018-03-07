@@ -3,7 +3,7 @@ for var in eng user userdebug; do
 done
 
 # Patches
-bash device/moto/panelli/patches/uninstall.sh
+#bash device/moto/panelli/patches/uninstall.sh
 
-bash device/moto/panelli/patches/install.sh
+#bash device/moto/panelli/patches/install.sh
 

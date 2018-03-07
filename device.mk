@@ -1,7 +1,4 @@
 DEVICE_PATH := device/moto/panelli
-VENDOR_BLOBS ?= vendor/moto/panelli/panelli-vendor.mk
-$(call inherit-product-if-exists, $(VENDOR_BLOBS))
-
 # Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/moto/panelli/prebuilts/kernel
@@ -18,7 +15,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Init
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/init.target.rc:root/init.target.rc
+    $(DEVICE_PATH)/rootdir/init.target.rc:init.target.rc
 
 # Permissions
 PRODUCT_COPY_FILES += \
