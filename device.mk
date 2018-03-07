@@ -15,7 +15,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Init
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/init.target.rc:init.target.rc
+    $(DEVICE_PATH)/rootdir/init.target.rc:root/init.target.rc
 
 # Permissions
 PRODUCT_COPY_FILES += \

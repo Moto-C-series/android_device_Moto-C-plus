@@ -22,6 +22,8 @@ LOCAL_PATH := device/moto/panelli
 
 $(call inherit-product, device/moto/panelli/device.mk)
 
+-include vendor/moto/panelli/panelli-vendor.mk
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
